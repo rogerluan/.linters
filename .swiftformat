@@ -110,7 +110,7 @@
 --enable strongOutlets
 --enable strongifiedSelf
 --enable todos
---disable trailingClosures
+--enable trailingClosures
 --commas always
 --trimwhitespace always
 --shortoptionals always
