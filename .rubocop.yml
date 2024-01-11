@@ -216,3 +216,16 @@ Style/MethodCallWithArgsParentheses:
     - 'it'
     - 'not_to'
     - 'to'
+
+RSpec/NamedSubject:
+  Enabled: true
+  EnforcedStyle: named_only
+
+RSpec/ExampleLength:
+  Max: 20
+
+RSpec/MultipleMemoizedHelpers:
+  Enabled: false
+
+RSpec/MultipleExpectations:
+  Enabled: false
