@@ -194,3 +194,25 @@ Style/Documentation:
 Style/MethodCallWithArgsParentheses:
   Enabled: true
   EnforcedStyle: require_parentheses
+  AllowParenthesesInMultilineCall: true
+  AllowedMethods:
+    - 'attr_accessor'
+    - 'attr_reader'
+    - 'command'
+    - 'desc'
+    - 'gem'
+    - 'lane'
+    - 'platform'
+    - 'program'
+    - 'raise'
+    - 'require_relative'
+    - 'require'
+    # rspec tests code below
+    - 'after'
+    - 'be'
+    - 'before'
+    - 'context'
+    - 'describe'
+    - 'it'
+    - 'not_to'
+    - 'to'
