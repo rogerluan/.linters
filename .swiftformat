@@ -151,3 +151,4 @@
 --enable acronyms
 --acronyms ID,URL,UUID,HTML
 --enable redundantOptionalBinding
+--selfrequired boundingRect, size
