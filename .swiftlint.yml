@@ -12,7 +12,10 @@ disabled_rules:
   - todo
   - file_length
 
-excluded: # paths to ignore during linting. Takes precedence over `included`.
+# Paths to ignore during linting. Takes precedence over `included`.
+# Unfortunately we need to declare them at each level, because SwiftLint wildcards implementation is broken.
+# See: https://github.com/realm/SwiftLint/issues/2329#issuecomment-974096822
+excluded:
   - "Pods" # Level 0
   - "*/Pods" # Level 1
   - "*/**/Pods" # Level 2
