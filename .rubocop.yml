@@ -189,3 +189,43 @@ Metrics/AbcSize:
 # Don't enforce documentation. Trust common sense here.
 Style/Documentation:
   Enabled: false
+
+# Enforce use of parentheses to call methods with arguments, instead of spaces.
+Style/MethodCallWithArgsParentheses:
+  Enabled: true
+  EnforcedStyle: require_parentheses
+  AllowParenthesesInMultilineCall: true
+  AllowedMethods:
+    - 'attr_accessor'
+    - 'attr_reader'
+    - 'command'
+    - 'desc'
+    - 'gem'
+    - 'lane'
+    - 'platform'
+    - 'program'
+    - 'raise'
+    - 'require_relative'
+    - 'require'
+    # rspec tests code below
+    - 'after'
+    - 'be'
+    - 'before'
+    - 'context'
+    - 'describe'
+    - 'it'
+    - 'not_to'
+    - 'to'
+
+RSpec/NamedSubject:
+  Enabled: true
+  EnforcedStyle: named_only
+
+RSpec/ExampleLength:
+  Max: 20
+
+RSpec/MultipleMemoizedHelpers:
+  Enabled: false
+
+RSpec/MultipleExpectations:
+  Enabled: false

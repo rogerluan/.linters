@@ -110,7 +110,7 @@
 --enable strongOutlets
 --enable strongifiedSelf
 --enable todos
---disable trailingClosures
+--enable trailingClosures
 --commas always
 --trimwhitespace always
 --shortoptionals always
@@ -151,3 +151,4 @@
 --enable acronyms
 --acronyms ID,URL,UUID,HTML
 --enable redundantOptionalBinding
+--selfrequired boundingRect, size

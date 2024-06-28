@@ -18,7 +18,7 @@ RUBOCOP_BIN_DIR=$(bundle info rubocop | grep "Path:" | awk -F ": " '{print $2}' 
 RUBOCOP_BIN="$RUBOCOP_BIN_DIR/exe/rubocop"
 
 bundle exec git_stage_formatter --formatter \"$SWIFTFORMAT_BIN stdin --stdinpath '{}'\" "*.swift"
-bundle exec git_stage_formatter --formatter \"$RUBOCOP_BIN --autocorrect-all --stderr --stdin '{}'\" "*.rb" "fastlane/*" "Gemfile" "Podfile" "dangerfiles/*" 2>/dev/null
+bundle exec git_stage_formatter --formatter \"$RUBOCOP_BIN --autocorrect-all --stderr --stdin '{}'\" "*.rb" "fastlane/*" "Gemfile" "Podfile" "Rakefile" "dangerfiles/*" 2>/dev/null
 
 if [ $? -ne 0 ]; then
   echo "Precommit hook couldn't lint everything for you. Run 'rake lint' before committing again."
