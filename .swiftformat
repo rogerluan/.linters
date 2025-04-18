@@ -7,11 +7,11 @@
 # Last file was last updated on:
 #
 #     $ date '+%B %d %Y'
-#     April 26 2023
+#     April 18 2025
 #     $ Pods/SwiftFormat/CommandLineTool/swiftformat --version
-#     0.51.6
+#     0.55.5
 #
-# with these Rules: https://github.com/nicklockwood/SwiftFormat/blob/02066042e81eba28470c41c2548fb2ad27ed1c0f/Rules.md
+# with these Rules: https://github.com/nicklockwood/SwiftFormat/blob/ca41c9751ded73223f3c6de54679247f16c27013/Rules.md
 #
 # When updating these rules, check the diff between the commit above and the latest Rules.md, then update the date and link above.
 # Then explicitly declare all rules, even the default implementations. This makes it easier for the developer to know whether we consciously decided on a rule's behavior or not.
@@ -89,7 +89,7 @@
 --disable redundantReturn
 --self init-only
 --enable redundantType
---redundanttype inferred
+--propertytypes inferred
 --enable redundantVoidReturnType
 --closurevoid remove
 --semicolons inline
