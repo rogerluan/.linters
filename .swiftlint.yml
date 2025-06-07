@@ -16,19 +16,14 @@ disabled_rules:
 # Unfortunately we need to declare them at each level, because SwiftLint wildcards implementation is broken.
 # See: https://github.com/realm/SwiftLint/issues/2329#issuecomment-974096822
 excluded:
-  - "Pods" # Level 0
-  - "*/Pods" # Level 1
-  - "*/**/Pods" # Level 2
-  - "*/**/Package.swift"
-  - ".swiftpm" # Level 0
-  - "*/.swiftpm" # Level 1
-  - "*/**/.swiftpm" # Level 2
-  - "build" # Level 0
-  - "*/build" # Level 1
-  - "*/**/build" # Level 2
-  - ".bundle" # Level 0
-  - "*/.bundle" # Level 1
-  - "*/**/.bundle" # Level 2
+  - "**/Pods"
+  - "**/.swiftpm"
+  - "**/build"
+  - "**/.build"
+  - "**/.bundle"
+  - "**/.vendor"
+  - "**/Generated"
+  - "**/templates"
 
 opt_in_rules:
   - xct_specific_matcher
